@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Life Partner - 90's Style</title>
+  <style>
+    /* Background with a repeating pattern */
+    body {
+      background-color: #000000;
+      font-family: 'Zilla Slab Highlight', cursive;
+      color: #000080; /* Deep navy blue for text */
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    /* Adding animation to headings */
+    h1 {
+      font-size: 42px;
+      color: #ff1493; /* Neon pink */
+      text-shadow: 3px 3px #ffff00, 5px 5px #ff4500; /* Layered shadows for pop */
+      animation: color-cycle 3s infinite;
+    }
+
+    h2 {
+      font-size: 32px;
+      color: #32cd32; /* Neon green */
+      text-shadow: 2px 2px #00bfff;
+    }
+
+    @keyframes color-cycle {
+      0% { color: #ff1493; }
+      33% { color: #32cd32; }
+      66% { color: #00bfff; }
+      100% { color: #ff1493; }
+    }
+
+    /* Retro-styled image */
+    img {
+      border: 8px ridge #ff4500; /* Ridge border for texture */
+      border-radius: 15px;
+      display: block;
+      margin: 20px auto;
+      max-width: 80%;
+      box-shadow: 5px 5px 20px #000080; /* Deep shadow */
+    }
+
+    /* Form with 90's style borders */
+    form {
+      background: linear-gradient(45deg, #ff9a9e, #fbc2eb);
+      border: 5px double #00ff00; /* Double border for retro effect */
+      padding: 25px;
+      border-radius: 20px;
+      display: inline-block;
+      box-shadow: 8px 8px 15px #808080; /* Heavy box shadow */
+      margin: 20px auto;
+    }
+
+    /* Input and dropdown styling */
+    input[type="text"],
+    input[type="email"],
+    select {
+      font-family: 'Courier New', monospace;
+      font-size: 18px;
+      padding: 10px;
+      margin: 10px 0;
+      width: 80%;
+      border: 3px inset #ff4500; /* Inset border for depth */
+      background-color: #ffffe0; /* Light yellow background */
+      box-shadow: 3px 3px #000080;
+    }
+
+    input[type="radio"] {
+      accent-color: #ff1493; /* Retro pink */
+      margin: 10px;
+    }
+
+    /* Buttons with bold hover effects */
+    button {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      font-size: 18px;
+      color: #ffffff;
+      background-color: #8cbd48; /* Vibrant blue */
+      padding: 10px 20px;
+      border: 3px solid #ff1493;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 4px 4px 10px #696969;
+    }
+
+    button:hover {
+      background-color: #ff4500; /* Bright orange */
+      color: #000000;
+    }
+
+    /* Blinking text for nostalgia */
+    p {
+      font-size: 20px;
+      color: #ff1493;
+      font-weight: bold;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0%, 50% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <h1>ARE YOU LOOKING FOR A LIFE PARTNER??!</h1>
+  <img src="expl.jpg" width= 500 height= 500 alt="Get a man into your life now">
+  <h2>HERE'S A SOLUTION</h2>
+  
+  <form action="">
+    <label for="name"><b>NAME:</b></label><br>
+    <input type="text" id="name" name="name" required><br>
+    
+    <label for="email"><b>EMAIL:</b></label><br>
+    <input type="email" id="email" name="email" required><br>
+    
+    <p><b>SELECT YOUR PARTNER</b></p>
+    
+    <label><b>GENDER:</b></label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    
+    <input type="radio" id="others" name="gender" value="others">
+    <label for="others">Others</label><br><br>
+    
+    <label for="type"><b>TYPE:</b></label><br>
+    <select id="type" name="type" required>
+      <option value="">Select</option>
+      <option value="g">Green Flag</option>
+      <option value="f">Fictional</option>
+      <option value="s">Sigma</option>
+      <option value="a">Alpha</option>
+      <option value="r">Red Flag</option>
+    </select><br><br>
+    
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>
